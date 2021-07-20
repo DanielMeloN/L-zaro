@@ -27,7 +27,7 @@ const Login: React.FC = () => {
   return(
     <Container>
 
-      <Logo source={require('../../assets/LogoemVetor.png')}
+      <Logo source={require('../../assets/icone.png')}
       />
 
       <InputText>E-mail: </InputText>

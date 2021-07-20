@@ -50,3 +50,5 @@ export const TextButton = styled.Text`
   font-size: 16px;
   align-items: center;
 `;
+
+export const InputText = styled.TextInput``

@@ -1,26 +1,8 @@
-import React, { useState } from 'react';
-import { ThemeProvider } from 'styled-components';
+import React  from 'react';
 
-import ThemeContext from './src/contexts/themeContext';
+import Routes from './src/routes'
 
-import dark from './src/styles/themes/dark';
-import light from './src/styles/themes/light';
-
-import Routes from './src/routes';
-
-export default function App() {
-
-  const [theme, setTheme] = useState(light);
-
-  const toggleTheme = () => {
-    setTheme(theme.title === 'light' ? dark : light);
-  }
-
-  return (
-    <ThemeContext.Provider value={{titleTheme: theme.title, toggleTheme}}>
-      <ThemeProvider theme={theme}>
-        <Routes />
-      </ThemeProvider>
-    </ThemeContext.Provider>
-  );
+export default function App(){
+  return <Routes />
 }
+
